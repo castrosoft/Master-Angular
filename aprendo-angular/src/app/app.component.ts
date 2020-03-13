@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Configuracion } from './models/configuracion';
+import { config } from 'rxjs';
 
 //decorador
 @Component({
@@ -7,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Title Angular';
+  title = 'Title Angular Variable';
+  public config;
+
+  constructor(){
+    this.title = Configuracion.titulo;
+    this.config = Configuracion; //contiene todo el objeto
+  }
 }
