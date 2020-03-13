@@ -13,3 +13,4 @@ export class VideojuegoComponent implements OnInit {
   }
 
 }
+ 
